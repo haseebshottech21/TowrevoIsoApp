@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="82" id="KGk-i7-Jjw" customClass="MyInquiryCell" customModule="TOWREVO" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="327" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="327" height="90"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" restorationIdentifier="MyInquiryCell" translatesAutoresizingMaskIntoConstraints="NO" id="Bs0-fG-kcQ" customClass="MyInquiryCell" customModule="SourceCode">
+                        <rect key="frame" x="0.0" y="0.0" width="327" height="90"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BoF-al-Kg0">
+                                <rect key="frame" x="15" y="15" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="BoF-al-Kg0" secondAttribute="height" multiplier="1:1" id="iWR-Cp-HBZ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cat Towing service" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NRh-cq-6zg">
+                                <rect key="frame" x="95" y="20" width="144.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5th jan, 2021" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TLg-UT-Lvw">
+                                <rect key="frame" x="95" y="43" width="84" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Vector (13)" translatesAutoresizingMaskIntoConstraints="NO" id="UcI-Pa-BmQ">
+                                <rect key="frame" x="296" y="38" width="14" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="UcI-Pa-BmQ" secondAttribute="height" multiplier="1:1" id="41a-N9-BS9"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="UcI-Pa-BmQ" firstAttribute="top" secondItem="Bs0-fG-kcQ" secondAttribute="top" constant="38" id="DGi-as-zWB"/>
+                            <constraint firstItem="NRh-cq-6zg" firstAttribute="top" secondItem="Bs0-fG-kcQ" secondAttribute="top" constant="20" id="KN5-kl-TS1"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="TLg-UT-Lvw" secondAttribute="bottom" constant="10" id="Qxk-EG-fcN"/>
+                            <constraint firstItem="TLg-UT-Lvw" firstAttribute="top" secondItem="NRh-cq-6zg" secondAttribute="bottom" constant="2" id="R0w-qx-Ssi"/>
+                            <constraint firstItem="TLg-UT-Lvw" firstAttribute="leading" secondItem="BoF-al-Kg0" secondAttribute="trailing" constant="20" id="SU2-aB-Sci"/>
+                            <constraint firstItem="UcI-Pa-BmQ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="TLg-UT-Lvw" secondAttribute="trailing" constant="20" id="VDX-d8-fQL"/>
+                            <constraint firstItem="BoF-al-Kg0" firstAttribute="leading" secondItem="Bs0-fG-kcQ" secondAttribute="leading" constant="15" id="XCy-XM-PXC"/>
+                            <constraint firstAttribute="bottom" secondItem="UcI-Pa-BmQ" secondAttribute="bottom" constant="38" id="csq-kk-eqU"/>
+                            <constraint firstItem="BoF-al-Kg0" firstAttribute="top" secondItem="Bs0-fG-kcQ" secondAttribute="top" constant="15" id="gPB-Az-elr"/>
+                            <constraint firstItem="UcI-Pa-BmQ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="NRh-cq-6zg" secondAttribute="trailing" constant="20" id="sRP-ED-X9F"/>
+                            <constraint firstItem="NRh-cq-6zg" firstAttribute="leading" secondItem="BoF-al-Kg0" secondAttribute="trailing" constant="20" id="t4Q-VI-obV"/>
+                            <constraint firstAttribute="bottom" secondItem="BoF-al-Kg0" secondAttribute="bottom" constant="15" id="yUE-aT-H52"/>
+                            <constraint firstAttribute="trailing" secondItem="UcI-Pa-BmQ" secondAttribute="trailing" constant="17" id="ywD-AZ-XY9"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Bs0-fG-kcQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="4ao-wm-4gt"/>
+                    <constraint firstItem="Bs0-fG-kcQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="L2C-Jn-Cl6"/>
+                    <constraint firstAttribute="bottom" secondItem="Bs0-fG-kcQ" secondAttribute="bottom" id="hOE-pG-nau"/>
+                    <constraint firstAttribute="trailing" secondItem="Bs0-fG-kcQ" secondAttribute="trailing" id="i7B-sp-p0j"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="contentview" destination="Bs0-fG-kcQ" id="XEW-Zj-ixc"/>
+                <outlet property="imglogo" destination="BoF-al-Kg0" id="fcB-BM-6W5"/>
+                <outlet property="lbldate" destination="TLg-UT-Lvw" id="8OD-NS-wu6"/>
+                <outlet property="lbltitle" destination="NRh-cq-6zg" id="Mus-tu-zf8"/>
+            </connections>
+            <point key="canvasLocation" x="-113.768115942029" y="81.026785714285708"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Vector (13)" width="8" height="12"/>
+    </resources>
+</document>
